@@ -14,7 +14,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
         <Route path="/registration" element={<Registration />} />
-        <Route path="/events/Codingcontest" element={<CodingContest/>}/>
+        <Route path="/events/coding-challenge" element={<CodingChallenge />} />
+        {/* Add other event routes here */}
       </Routes>
       <Footer />
     </Router>
