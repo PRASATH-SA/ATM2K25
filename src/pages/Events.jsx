@@ -1,54 +1,69 @@
 // src/pages/Events.jsx
+import { title } from "framer-motion/client";
 import { Link } from "react-router-dom";
 
 export default function Events() {
   const departments = [
     {
-      name: "CSE",
+      name: "Computer Science & Engineering",
       color: "from-indigo-500 to-purple-500",
       events: [
-        { title: "Coding Challenge", path: "/events/coding-challenge" },
-        { title: "Paper Presentation", path: "/events/paper-presentation" },
+        { title: "Project Presentation", path: "/events/paper-presentation" },
+        { title: "Hunt the Bug"},
+        { title: "Creative Collision(Poster Designing)"},
+        { title: "Quiz Bit"},
+        { title: "Code Craft"}
       ],
     },
     {
-      name: "AI & DS",
+      name: "Artificial Intelligence & Data Science",
       color: "from-pink-500 to-yellow-500",
       events: [
-        { title: "AI Hackathon", path: "/events/ai-hackathon" },
-        { title: "Data Visualization", path: "/events/data-visualization" },
+        { title: "AI PROMPT BATTLE", path: "/events/ai-hackathon" },
+        { title: "FRONTEND FLUX", path: "/events/data-visualization" },
+        { title: "CINETECH", path: "/events/ai-hackathon" },
+        { title: "IDEA SHOWCASE", path: "/events/data-visualization" }
       ],
     },
     {
-      name: "MECH",
+      name: "Mechanical Engineering",
       color: "from-green-500 to-emerald-600",
       events: [
-        { title: "CAD Design", path: "/events/cad-design" },
-        { title: "AutoExpo", path: "/events/auto-expo" },
+        { title: "Paper presentation", path: "/events/cad-design" },
+        { title: "Cad war", path: "/events/auto-expo" },
+        { title: "Mr. Machinist", path: "/events/auto-expo" },
+        { title: "Water rocketry", path: "/events/auto-expo" },
+        { title: "Tech Quiz", path: "/events/auto-expo" },
       ],
     },
     {
-      name: "ECE",
+      name: "Electronics and Communication Engineering",
       color: "from-blue-500 to-cyan-500",
       events: [
-        { title: "Circuit Debugging", path: "/events/circuit-debugging" },
-        { title: "IoT Challenge", path: "/events/iot-challenge" },
+        { title: "IdeaXplore", path: "/events/circuit-debugging" },
+        { title: "QuiztroniX", path: "/events/iot-challenge" },
+        { title: "Circuitrix", path: "/events/iot-challenge" },
+        { title: "clashX", path: "/events/iot-challenge" },
       ],
     },
     {
-      name: "EEE",
+      name: "Electrical and Electronics Engineering",
       color: "from-orange-500 to-red-500",
       events: [
-        { title: "Power Quiz", path: "/events/power-quiz" },
-        { title: "Smart Grid Ideas", path: "/events/smart-grid" },
+        { title: "INFINITO'25", path: "/events/power-quiz" },
+        { title: "BUGZAP", path: "/events/smart-grid" },
+        { title: "CRE-O-EXPO", path: "/events/smart-grid" },
+        { title: "CONNECTRIX", path: "/events/smart-grid" },
+        { title: "TECHWHIZ", path: "/events/smart-grid" },
       ],
     },
     {
-      name: "CIVIL",
+      name: "Civil Engineering",
       color: "from-teal-500 to-lime-500",
       events: [
-        { title: "Bridge Design", path: "/events/bridge-design" },
-        { title: "Survey Challenge", path: "/events/survey-challenge" },
+        { title: "Paper Presentation", path: "/events/bridge-design" },
+        { title: "CADD modelling", path: "/events/survey-challenge" },
+        { title: "Code Cracking", path: "/events/survey-challenge" },
       ],
     },
   ];
