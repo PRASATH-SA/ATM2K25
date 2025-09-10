@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Custom Theme Colors */
+:root {
+  --color-primary: #4f46e5;   /* Indigo */
+  --color-secondary: #ec4899; /* Pink */
+  --color-tertiary: #22d3ee;  /* Cyan */
+}
+
+body {
+  @apply font-sans bg-gray-900 text-white;
+}
