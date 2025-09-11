@@ -6,6 +6,7 @@ import Events from "./pages/Events";
 import Registration from "./pages/Registration";
 import CodingContest from "./pages/events/CodingContest"
 import Favicon from "./assets/achariya25.jpg"
+import AtmLogo from "./assets/atmLogo.png";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/registration" element={<Registration />} />
         <Route path="/events/codingcontest" element={<CodingContest />} />
         <Route path="/gg" element={<Favicon />} />
+        <Route path="/ggg" element={<AtmLogo />} />
         
         {/* Add other event routes here */}
       </Routes>

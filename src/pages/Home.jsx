@@ -65,7 +65,6 @@ export default function Home() {
             Symposium Highlights
           </h2>
           <ul className="mt-6 text-gray-200 space-y-4 text-lg">
-            <li>Coding Contests & Hackathons</li>
             <li>Paper & Poster Presentations</li>
             <li>Robotics & Mechanical Challenges</li>
             <li>Guest Lectures & Workshops</li>
