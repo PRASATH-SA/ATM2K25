@@ -23,5 +23,6 @@
 /* Neon text */
 .text-neon {
   color: #0ff;
+  -webkit-text-stroke: .3px black;
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 }
