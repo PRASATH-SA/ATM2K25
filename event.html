@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event - ATM2K25</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-purple-950 via-black to-gray-900 text-white flex items-center justify-center px-6">
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <img src="res/atmLogo.png" alt="ATM'25" width="200px">
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="index.html" class="neon-link">Home</a></li>
+                <li><a href="departments.html" class="neon-link">Events</a></li>
+                <li><a href="about.html" class="neon-link">About</a></li>
+                <li><a href="contact.html" class="neon-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="event-detail" class="glass-card neon-border max-w-2xl w-full p-8 rounded-2xl shadow-lg">
+    <!-- Event details load here -->
+  </div>
+
+  <script>
+    async function loadEvent() {
+      const params = new URLSearchParams(window.location.search);
+      const deptId = params.get("dept");
+      const id = parseInt(params.get("id"));
+
+      const res = await fetch("events.json");
+      const data = await res.json();
+      const dept = data.find(d => d.deptId === deptId);
+      if (!dept) return document.getElementById("event-detail").innerHTML = "<p>Department not found!</p>";
+      
+      const event = dept.events.find(e => e.id === id);
+      if (!event) return document.getElementById("event-detail").innerHTML = "<p>Event not found!</p>";
+
+      document.getElementById("event-detail").innerHTML = `
+        <h1 class="text-3xl font-extrabold mb-4 text-neon">${event.title}</h1>
+        <p class="mb-4 text-gray-300">${event.description}</p>
+        <p class="mb-4"><strong>Timing:</strong> ${event.timing}</p>
+        <div>
+          <h2 class="text-xl font-bold mb-2">Rules & Regulations</h2>
+          <ul class="list-disc list-inside text-gray-300">
+            ${event.rules.map(rule => `<li>${rule}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+    loadEvent();
+  </script>
+</body>
+</html>

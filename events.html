@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - ATM2K25</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 via-black to-purple-900 text-white">
+  
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <img src="res/atmLogo.png" alt="ATM'25" width="200px">
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="index.html" class="neon-link">Home</a></li>
+                <li><a href="departments.html" class="neon-link">Events</a></li>
+                <li><a href="about.html" class="neon-link">About</a></li>
+                <li><a href="contact.html" class="neon-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-10 mt-20">
+    <h1 id="deptName" class="text-4xl font-extrabold text-neon"></h1>
+    <p class="text-gray-400 mt-2">Explore the exciting events</p>
+  </header>
+
+  <main class="container mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3" id="events">
+    <!-- Events load here -->
+  </main>
+
+  <script>
+    async function loadEvents() {
+      const params = new URLSearchParams(window.location.search);
+      const deptId = params.get("dept");
+
+      const res = await fetch("events.json");
+      const data = await res.json();
+      const dept = data.find(d => d.deptId === deptId);
+
+      if (!dept) return document.getElementById("deptName").textContent = "Department Not Found";
+
+      document.getElementById("deptName").textContent = dept.name;
+
+      const container = document.getElementById("events");
+      dept.events.forEach(event => {
+        const card = document.createElement("a");
+        card.href = `event.html?dept=${deptId}&id=${event.id}`;
+        card.className = "glass-card neon-border p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform";
+        card.innerHTML = `
+          <h2 class="text-2xl font-bold mb-2">${event.title}</h2>
+          <p class="text-gray-300 mb-4">${event.description.substring(0, 100)}...</p>
+          <span class="text-sm text-gray-400">⏰ ${event.timing}</span>
+        `;
+        container.appendChild(card);
+      });
+    }
+    loadEvents();
+  </script>
+</body>
+</html>

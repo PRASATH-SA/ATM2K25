@@ -1,0 +1,325 @@
+[
+  {
+    "deptId": "AIDS",
+    "name": "Artificial Intelligence & Data Science",
+    "events": [
+      {
+        "id": 1,
+        "title": "AI PROMPT BATTLE",
+        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "timing": "10:30 AM - 12:30 PM",
+        "rules": [
+          "Individual participation",
+          "No external devices allowed",
+          "Internet access restricted"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "FRONTEND FLUX",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "CINETECH",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "IDEA SHOWCASE",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "civil",
+    "name": "Civil Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "Paper Presentation",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "CADD modelling",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Code Cracking",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "cse",
+    "name": "Computer Science & Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "Project Presentation",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Hunt the Bug",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Creative Collision",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Quiz Bit",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Code Craft",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "ece",
+    "name": "Electronics & Communication Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "IdeaXplore",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "QuiztroniX",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Circuitrix",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "clashX",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "eee",
+    "name": "Electronics & Electronic Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "TECHWHIZ",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "INFINITO'25",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "BUGZAP",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "CRE-O-EXPO",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "CONNECTRIX",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "mech",
+    "name": "Mechanical Engineering",
+    "events": [
+       {
+        "id": 1,
+        "title": "Paper presentation",
+        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "timing": "10:30 AM - 12:30 PM",
+        "rules": [
+          "Individual participation",
+          "No external devices allowed",
+          "Internet access restricted"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Cad war",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 3,
+        "title": "Mr. Machinist",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 4,
+        "title": "Water rocketry",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 5,
+        "title": "Tech Quiz",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      }
+         
+    ]
+  }
+]

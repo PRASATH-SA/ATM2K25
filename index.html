@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achariya Tech Fest</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#0f0c29] text-white font-sans">
+
+    <style>
+        /* Parallax background */
+    .parallax {
+    background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This creates the parallax effect */
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4); /* Optional: darken the background for better text contrast */
+    z-index: -10;
+    }
+
+    </style>
+  <div class="parallax absolute inset-0 -z-10"></div> 
+
+  <!-- 🔹 Navbar with Glassmorphism -->
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <img src="res/atmLogo.png" alt="ATM'25" width="200px">
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="index.html" class="neon-link">Home</a></li>
+        <li><a href="departments.html" class="neon-link">Events</a></li>
+        <li><a href="about.html" class="neon-link">About</a></li>
+        <li><a href="contact.html" class="neon-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <h2 class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">Welcome to ACHARIYA TECH MEET 2K25 </h2>
+    <p class="mt-6 text-lg max-w-2xl text-gray-200">Welcome to our annual inter-department symposium. <br>Join us for exciting events and competitions!</p>
+    <a href="departments.html" class="mt-10 px-8 py-3 rounded-2xl neon-button">🚀 Explore Events</a>
+  </header>
+
+
+  <section class="py-16 bg-white/5 backdrop-blur-xl relative z-10 p-4">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 ">
+      <div class="glass-card neon-border" style="text-align: justify;">
+        <h2 class="text-4xl font-bold text-center text-cyan-300 mb-8 drop-shadow-neon">ABOUT ATM'25</h2>
+        <p><b>Achariya College of Engineering Technology</b>, Puducherry, is delighted to host <b>ATM 25</b>, a National Level Technical Symposium, on October 10, 2025. This annual technical fest is designed to encourage innovation, creativity, and collaboration among young engineers and technologists. It provides a unique platform for students to showcase their technical skills, share knowledge, and gain insights into emerging trends in engineering and technology.
+<br><br>
+ATM 25 will feature a vibrant mix of events including paper presentations, project expos, technical quizzes, hackathons, and expert talks by industry leaders. These sessions are carefully curated to enhance the problem-solving abilities, technical expertise, and research orientation of participants. In addition to the technical programs, the symposium also offers engaging cultural and fun events, ensuring a holistic and memorable experience for all attendees.
+<br><br>
+By bringing together students, academicians, and professionals from across the country, ATM 25 aims to foster an environment of learning, networking, and innovation. Participants will not only have the chance to compete and win recognition but also to build meaningful connections and expand their horizons. With its commitment to excellence, Achariya College of Engineering Technology looks forward to making ATM 25 a grand success and a celebration of engineering brilliance.
+</p>
+    </div>
+    <div class="glass-card neon-border" style="text-align: justify;">
+        <h2 class="text-4xl font-bold text-center text-cyan-300 mb-8 drop-shadow-neon">ABOUT ACET</h2>
+        <p>Achariya College of Engineering Technology, which was established in 2010, has spent over a decade dedicated to nurturing the academic and professional growth of its students and staff. Over the years, the institution has evolved into a hub of Innovation and Excellence, continually adapting to the ever-changing demands of the Engineering field. The college has built a strong reputation for its commitment to high-quality Education, state-of-the-art Facilities, and a supportive Learning Environment. With a focus on both theoretical Knowledge and practical Skills, it has successfully equipped its graduates with the tools needed to excel in their careers. The college’s success can be attributed to its dedicated Faculty, progressive Curriculum, and emphasis on Research and Development. As it moves forward, Achariya College of Engineering Technology remains steadfast in its mission to empower students and contribute to the advancement of Technology and Society.
+          <br><br>
+          <b>Achariya Group of Institutions</b>, celebrating its 25th glorious year of excellence in education, proudly presents Achariya Tech Meet – ATM 25, a National Level Technical Symposium, hosted by Achariya College of Engineering Technology, Puducherry, on <b>October 10, 2025</b>.</p>
+
+  </section>
+
+<section class="max-w-5xl mx-auto py-16 px-6">
+  <h3 class="text-4xl font-bold text-center text-cyan-300 mb-10 drop-shadow-neon">Departments</h3>
+
+  <div class="relative">
+    <!-- Carousel container -->
+    <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide space-x-6">
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/acetcm_logo.jpg" alt="Image 1" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/acetronix_logo.png" alt="Image 2" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/atmLogo.png" alt="Image 3" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <!-- Duplicate slides for seamless loop -->
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/achariya25.jpg" alt="Image 1" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/achariya25.jpg" alt="Image 1" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/achariya25.jpg" alt="Image 1" class="w-full h-full object-cover rounded-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="max-w-5xl mx-auto py-16 px-6 relative z-10">
+    <h3 class="text-4xl font-bold text-center text-cyan-300 mb-10 drop-shadow-neon">Event Schedule</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="glass-card neon-border"><h4>Inauguration</h4><p>9:30 am - 10:30 am</p></div>
+      <div class="glass-card neon-border"><h4>Events</h4><p>10:30 am - 3:00 pm</p></div>
+      <div class="glass-card neon-border"><h4>Lunch</h4><p>12:30 pm - 1:30 pm</p></div>
+      <div class="glass-card neon-border"><h4>Prize Distribution</h4><p>4:00 pm - 5:00 pm</p></div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white/5 backdrop-blur-xl relative z-10">
+    <h3 class="text-4xl font-bold text-center text-cyan-300 mb-8 drop-shadow-neon">Co-ordinators</h3>
+    <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-6 text-center">
+      <div class="glass-card neon-border"><h4>Mr. K. Ganeshan</h4><p>📞 9443293653</p></div>
+      <div class="glass-card neon-border"><h4>Mrs. V. Bhuvaneshwari</h4><p>📞 8973443438</p></div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-gray-400 bg-black/60 relative z-10">
+    © 2025 Achariya College of Engineering Technology. All Rights Reserved.
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+  const parallax = document.querySelector('.parallax');
+
+  window.addEventListener('scroll', () => {
+    let offset = window.pageYOffset;
+    parallax.style.transform = `translateY(${offset * 0.5}px)`; // 0.5 = speed factor
+  });
+</script>
+
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const cardWidth = 350; // width + gap approx
+
+  let scrollPosition = 0;
+  const totalScroll = carousel.scrollWidth / 2; // Because we duplicated slides for looping
+
+  function autoScroll() {
+    scrollPosition += cardWidth;
+    if (scrollPosition >= totalScroll) {
+      // Reset scroll for infinite loop
+      scrollPosition = 0;
+      carousel.scrollTo({ left: 0, behavior: 'auto' });
+    } else {
+      carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    }
+  }
+
+  // Auto-scroll every 3 seconds
+  const scrollInterval = setInterval(autoScroll, 3000);
+
+  // Optional: pause scroll on hover
+  carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+  carousel.addEventListener('mouseleave', () => setInterval(autoScroll, 3000));
+</script>
+
+<style>
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
+
+
+</body>
+</html>
