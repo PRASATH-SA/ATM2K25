@@ -53,7 +53,7 @@
 
       data.forEach(dept => {
         const card = document.createElement("a");
-        card.href = `events.html?dept=${dept.deptId}`;
+        card.href = `event/?dept=${dept.deptId}`;
         card.className = "glass-card neon-border p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform";
         card.innerHTML = `
           <h2 class="text-2xl font-bold">${dept.name}</h2>

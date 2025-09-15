@@ -21,31 +21,18 @@
   </url>
 
   <url>
-    <loc>https://atm25.netlify.app/about</loc>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.example.com/images/team.jpg</image:loc>
-      <image:title>Our Team</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.example.com/services</loc>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.example.com/images/service1.jpg</image:loc>
-      <image:title>Service 1</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.example.com/contact</loc>
+    <loc>https://atm25.netlify.app/departments</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/faqs</loc>
-    <priority>0.6</priority>
+    <loc>https://atm25.netlify.app/events</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://atm25.netlify.app/event</loc>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
