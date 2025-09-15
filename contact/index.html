@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Departments - ATM2K25</title>
+  <title>Contact - ATM2K25</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body class="min-h-screen bg-gradient-to-br from-purple-900 via-black to-gray-900 text-white">
     <style>
@@ -23,7 +23,7 @@
     </style>
     <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
         <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-            <a href="index.html"><img src="res/atmLogo.png" alt="ATM'25" width="200px"></a>
+            <a href="index.html"><img src="/res/atmLogo.png" alt="ATM'25" width="200px"></a>
             <ul class="flex space-x-6 text-lg">
                 <li><a href="index.html" class="neon-link">Home</a></li>
                 <li><a href="departments.html" class="neon-link">Events</a></li>
@@ -31,15 +31,15 @@
         </div>
     </nav>
  <div class="parallax absolute inset-0 -z-10">
-    <video src="res/matrix_bg.mp4" autoplay muted loop style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
+    <video src="/res/tech.mp4" autoplay muted loop style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
   </div> 
 
   <header class="text-center py-10 mt-20">
-    <h1 class="text-4xl font-extrabold text-neon">DEPARTMENTS</h1>
-    <p class="text-gray-400 mt-2">Choose a department to explore its events</p>
+    <h1 class="text-4xl font-extrabold text-neon">CONTACT US</h1>
+    <p class="text-gray-400 mt-2">Event co-ordinators for contact</p>
   </header>
 
-  <main class="container mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3" id="departments">
+  <main class="container mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3" id="co-ordinators">
     <!-- Departments load here -->
   </main>
  <footer class="fixed text-center py-6 text-gray-400 bg-black/60 relative z-10 mt-10" style="top: 0;">
@@ -47,9 +47,9 @@
   </footer>
   <script>
     async function loadDepartments() {
-      const res = await fetch("events.json");
+      const res = await fetch("/events.json");
       const data = await res.json();
-      const container = document.getElementById("departments");
+      const container = document.getElementById("co-ordinators");
 
       data.forEach(dept => {
         const card = document.createElement("a");

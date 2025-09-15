@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events - ATM2K25</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body class="min-h-screen bg-gradient-to-br from-gray-900 via-black to-purple-900 text-white">
   <style>
@@ -22,11 +22,11 @@
     }
     </style>
  <div class="parallax absolute inset-0 -z-10">
-    <video src="res/tech.mp4" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
+    <video src="/res/tech.mp4" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
   </div> 
     <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
         <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-            <a href="index.html"><img src="res/atmLogo.png" alt="ATM'25" width="200px"></a>
+            <a href="index.html"><img src="/res/atmLogo.png" alt="ATM'25" width="200px"></a>
             <ul class="flex space-x-6 text-lg">
                 <li><a href="index.html" class="neon-link">Home</a></li>
                 <li><a href="departments.html" class="neon-link">Events</a></li>
@@ -48,7 +48,7 @@
       const params = new URLSearchParams(window.location.search);
       const deptId = params.get("dept");
 
-      const res = await fetch("events.json");
+      const res = await fetch("/events.json");
       const data = await res.json();
       const dept = data.find(d => d.deptId === deptId);
 
