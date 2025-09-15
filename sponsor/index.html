@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPONSORS - ATM2K25</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-900 via-black to-gray-900 text-white">
+    <style>
+      .parallax {
+    background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This creates the parallax effect */
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4); /* Optional: darken the background for better text contrast */
+    z-index: -10;
+    }
+    </style>
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <a href="index.html"><img src="/res/atmLogo.png" alt="ATM'25" width="200px"></a>
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="index.html" class="neon-link">Home</a></li>
+                <li><a href="departments.html" class="neon-link">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+ <div class="parallax absolute inset-0 -z-10">
+    <video src="/res/particles.mp4" autoplay muted loop style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
+  </div> 
+
+  <header class="text-center py-10 mt-20">
+    <h1 class="text-4xl font-extrabold text-neon">SPONSORS</h1>
+    <p class="text-gray-400 mt-2">Sponsors for our Symposium - Achariya Tech Meet 2k25</p>
+  </header>
+
+  <main class="container mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3" id="departments">
+    <a href="https://favoflex.com" class="glass-card neon-border p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+        <h2 class="text-2xl font-bold py-2">Favoflex E-commerce India</h2>
+        <center><img src="https://www.favoflex.com/FAVOFLEX.jpg" style="border-radius: 10px; width: 80%;" alt="Favoflex"></center>
+        <p class="text-gray-300 py-2">Website Sponsored by Favoflex E-Commerce India</p>
+    </a>
+  </main>
+ <footer class="fixed text-center py-6 text-gray-400 bg-black/60 relative z-10 mt-10" style="top: 0;">
+    © 2025 Achariya College of Engineering Technology. All Rights Reserved.
+  </footer>
+ 
+</body>
+</html>
