@@ -79,7 +79,7 @@
 <div id="splash-screen" class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-purple-950 via-black to-gray-900 z-[9999]">
   <div class="logo-container text-center">
     <img src="res/atmLogo.png" alt="ATM2K25 Logo" class="logo w-48 mx-auto">
-    <h1 class="mt-4 text-3xl font-extrabold text-neon">ATM2K25</h1>
+    <h1 class="mt-4 text-3xl font-extrabold ">Achariya Tech Meet 2k25</h1>
   </div>
 </div>
 
@@ -92,13 +92,13 @@
         <a href="index.html"><img src="res/atmLogo.png" alt="ATM'25" width="200px"></a>
       <ul class="flex space-x-6 text-lg">
         <li><a href="index.html" class="neon-link">Home</a></li>
-        <li><a href="departments.html" class="neon-link">Events</a></li>
+        <li><a href="./departments" class="neon-link">Events</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="h-screen flex flex-col justify-center items-center text-center px-6 relative">
-    <h2 class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">Welcome to ACHARIYA TECH MEET 2K25 </h2>
+    <h2 class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">ACHARIYA TECH MEET 2K25 </h2>
     <p class="mt-6 text-lg max-w-2xl text-gray-200">Welcome to our annual inter-department symposium. <br>Join us for exciting events and competitions!</p>
     <a href="departments.html" style="display: inline-flex;" class="mt-10 px-8 py-3 rounded-2xl neon-button">
       <svg xmlns="http://www.w3.org/2000/svg" title="Explore Events" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -176,8 +176,6 @@ By bringing together students, academicians, and professionals from across the c
   <footer class="text-center py-6 text-gray-400 bg-black/60 relative z-10">
     © 2025 Achariya College of Engineering Technology. All Rights Reserved.
   </footer>
-
-  <script src="js/script.js"></script>
   <script>
   const parallax = document.querySelector('.parallax');
 
@@ -218,22 +216,7 @@ By bringing together students, academicians, and professionals from across the c
 <!-- Custom Cursor -->
 <div id="cursor"></div>
 
-<script>
-  const cursor = document.getElementById("cursor");
 
-  // Track mouse position
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.pageX + "px";
-    cursor.style.top = e.pageY + "px";
-  });
-
-  // Optional: Add hover effect on links & buttons
-  const hoverTargets = document.querySelectorAll("a, button, .neon-button");
-  hoverTargets.forEach(el => {
-    el.addEventListener("mouseenter", () => cursor.classList.add("cursor-hover"));
-    el.addEventListener("mouseleave", () => cursor.classList.remove("cursor-hover"));
-  });
-</script>
 
 <style>
 .scrollbar-hide::-webkit-scrollbar {
@@ -277,6 +260,6 @@ By bringing together students, academicians, and professionals from across the c
     }, 4000); // total time (3s show + 1s fade)
   });
 </script>
-
+<script src="script.js"></script>
 </body>
 </html>
