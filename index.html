@@ -48,6 +48,18 @@
           $('#dropdownMenu').addClass('hidden');
         }
       });
+
+      $('#dropdownButton1').on('mouseover', function (e) {
+        e.preventDefault();
+        $('#dropdownMenu1').toggleClass('hidden');
+      });
+
+      // Close dropdown when clicking outside
+      $(document).on('click', function (e) {
+        if (!$(e.target).closest('#dropdownButton1, #dropdownMenu1').length) {
+          $('#dropdownMenu1').addClass('hidden');
+        }
+      });
     });
   </script>
 <!-- https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
@@ -134,11 +146,24 @@
         <li><a href="organizing_committee/" class="neon-link">Organizing Committee</a></li>
         <li class="neon-link" id="dropdownButton">Events
           <ul id="dropdownMenu" class="absolute hidden backdrop-blur-xl bg-white/10 border-b border-cyan-400/40 mt-2 rounded group-hover:block">
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Web Design</a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">SEO</a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Marketing</a></li>
+            <li>
+              <a href="#" id="dropdownButton1"class="block px-4 py-2 neon-link hover:bg-black">
+              Computer Science & Engineering
+            </a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Artificial Intelligence & Data Science</a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Electronics & Communication Engineering</a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Electrical & Electronics Engineering</a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Civil Engineering</a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Mechanical Engineering</a></li>
           </ul>
         </li>
+        <ul id="dropdownMenu1" class="absolute hidden backdrop-blur-xl bg-white/40 border-b border-cyan-400/40 mt-2 rounded group-hover:block">
+                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
+                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
+                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
+                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
+                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
+        </ul>
         <li><a href="contact/" class="neon-link">Contact Us</a></li>
         <li><a href="" class="neon-link">Register Now</a></li>
       </ul>
@@ -148,7 +173,7 @@
   <header class="h-screen flex flex-col justify-center items-center text-center px-6 relative">
     <h2 class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">ACHARIYA TECH MEET 2K25 </h2>
     <p class="mt-6 text-lg max-w-2xl text-gray-200">Welcome to our annual inter-department symposium. <br>Join us for exciting events and competitions!</p>
-    <a href="departments.html" style="display: inline-flex;" class="mt-10 px-8 py-3 rounded-2xl neon-button">
+    <a href="departments/" style="display: inline-flex;" class="mt-10 px-8 py-3 bg-white/20 border-b border-cyan-400/40 rounded rounded-2xl neon-button hover:backdrop-blur-xl">
       <svg xmlns="http://www.w3.org/2000/svg" title="Explore Events" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
       </svg> &nbsp;Explore Events</a>
