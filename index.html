@@ -5,12 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Achariya Tech Meet 25</title>
   <link rel="shortcut icon" href="res/achariya25.jpg" type="image/x-icon">
-  <!-- Tailwind CSS -->
+  <!-- JQuery & Tailwind CSS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- <link rel="stylesheet" href="style.css"> -->
   <meta name="google-site-verification" content="ihABI4ddWtMjowGMQHWwomxidrEhnATpUEkYdyUDKQg" />
 </head>
 <body class="bg-[#0f0c29] text-white font-sans atm_cursor">
+  
+  <!-- Navigation Bar -->
+  <!-- <nav class="bg-blue-600 text-white">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-lg font-bold">My Website</div>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">About</a></li>
+        <li class="relative group">
+          <button id="dropdownButton" class="hover:text-gray-300">Services</button>
+          --- Dropdown Menu
+          <ul id="dropdownMenu" class="absolute hidden bg-white text-black mt-2 rounded shadow-lg group-hover:block">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Web Design</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">SEO</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Marketing</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <script>
+    // jQuery for Dropdown Toggle
+    $(document).ready(function () {
+      $('#dropdownButton').on('click', function (e) {
+        e.preventDefault();
+        $('#dropdownMenu').toggleClass('hidden');
+      });
+
+      // Close dropdown when clicking outside
+      $(document).on('click', function (e) {
+        if (!$(e.target).closest('#dropdownButton, #dropdownMenu').length) {
+          $('#dropdownMenu').addClass('hidden');
+        }
+      });
+    });
+  </script>
 <!-- https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
     <style>
         /* Parallax background */
@@ -92,7 +131,16 @@
         <a href="index.html"><img src="res/atmLogo.png" alt="ATM'25" width="200px"></a>
       <ul class="flex space-x-6 text-lg">
         <li><a href="index.html" class="neon-link">Home</a></li>
-        <li><a href="./departments" class="neon-link">Events</a></li>
+        <li><a href="http://" class="neon-link">Organizing Committee</a></li>
+        <li class="neon-link" id="dropdownButton">Events
+          <ul id="dropdownMenu" class="absolute hidden backdrop-blur-xl bg-white/10 border-b border-cyan-400/40 mt-2 rounded group-hover:block">
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Web Design</a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">SEO</a></li>
+            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Marketing</a></li>
+          </ul>
+        </li>
+        <li><a href="http://" class="neon-link">Contact Us</a></li>
+        <li><a href="http://" class="neon-link">Register Now</a></li>
       </ul>
     </div>
   </nav>
