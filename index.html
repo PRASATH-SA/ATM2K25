@@ -10,30 +10,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- <link rel="stylesheet" href="style.css"> -->
   <meta name="google-site-verification" content="ihABI4ddWtMjowGMQHWwomxidrEhnATpUEkYdyUDKQg" />
+  <meta name="description" content="Achariya Tech Meet - 2k25, A National level Technical Symposium by Achariya College of Engineering Technology. Website Sponsored by Favoflex.">
 </head>
 <body class="bg-[#0f0c29] text-white font-sans atm_cursor">
-  
-  <!-- Navigation Bar -->
-  <!-- <nav class="bg-blue-600 text-white">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <div class="text-lg font-bold">My Website</div>
-      <ul class="flex space-x-4">
-        <li><a href="#" class="hover:text-gray-300">Home</a></li>
-        <li><a href="#" class="hover:text-gray-300">About</a></li>
-        <li class="relative group">
-          <button id="dropdownButton" class="hover:text-gray-300">Services</button>
-          --- Dropdown Menu
-          <ul id="dropdownMenu" class="absolute hidden bg-white text-black mt-2 rounded shadow-lg group-hover:block">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Web Design</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">SEO</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Marketing</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-      </ul>
-    </div>
-  </nav> -->
-
   <script>
     // jQuery for Dropdown Toggle
     $(document).ready(function () {
@@ -46,18 +25,6 @@
       $(document).on('click', function (e) {
         if (!$(e.target).closest('#dropdownButton, #dropdownMenu').length) {
           $('#dropdownMenu').addClass('hidden');
-        }
-      });
-
-      $('#dropdownButton1').on('mouseover', function (e) {
-        e.preventDefault();
-        $('#dropdownMenu1').toggleClass('hidden');
-      });
-
-      // Close dropdown when clicking outside
-      $(document).on('click', function (e) {
-        if (!$(e.target).closest('#dropdownButton1, #dropdownMenu1').length) {
-          $('#dropdownMenu1').addClass('hidden');
         }
       });
     });
@@ -144,26 +111,7 @@
       <ul class="flex space-x-6 text-lg">
         <li><a href="" class="neon-link">Home</a></li>
         <li><a href="organizing_committee/" class="neon-link">Organizing Committee</a></li>
-        <li class="neon-link" id="dropdownButton">Events
-          <ul id="dropdownMenu" class="absolute hidden backdrop-blur-xl bg-white/10 border-b border-cyan-400/40 mt-2 rounded group-hover:block">
-            <li>
-              <a href="#" id="dropdownButton1"class="block px-4 py-2 neon-link hover:bg-black">
-              Computer Science & Engineering
-            </a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Artificial Intelligence & Data Science</a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Electronics & Communication Engineering</a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Electrical & Electronics Engineering</a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Civil Engineering</a></li>
-            <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Mechanical Engineering</a></li>
-          </ul>
-        </li>
-        <ul id="dropdownMenu1" class="absolute hidden backdrop-blur-xl bg-white/40 border-b border-cyan-400/40 mt-2 rounded group-hover:block">
-                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
-                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
-                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
-                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
-                  <li><a href="#" class="block px-4 py-2 neon-link hover:bg-black">Event1</a></li>
-        </ul>
+        <li><a href="departments/" class="neon-link">Events</a></li>
         <li><a href="contact/" class="neon-link">Contact Us</a></li>
         <li><a href="" class="neon-link">Register Now</a></li>
       </ul>
