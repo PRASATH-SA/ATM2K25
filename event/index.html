@@ -24,25 +24,6 @@
     </style>
   
 
-<script>
-  let navLink = document.getElementById("navlinks");
-  let resNav = document.getElementById("res_nav");
-  let navBar = document.getElementById("MenuBar");
-  if(window.outerWidth<="470"){
-    navLink.classList.add('hidden')
-    resNav.classList.add("hidden")
-    navBar.classList.remove("hidden")
-
-    navBar.addEventListener('click',() =>{
-      navLink.classList.toggle('hidden');
-    });
-  }
-  else{
-    navLink.classList.add('hidden')
-    resNav.classList.remove("hidden")
-    navBar.classList.add("hidden")
-  }
-</script>
   <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
         <a href="../"><img src="../res/atmLogo.png" alt="ATM'25" width="200px"></a>
@@ -142,7 +123,7 @@
   let navLink = document.getElementById("navlinks");
   let resNav = document.getElementById("res_nav");
   let navBar = document.getElementById("MenuBar");
-  if(window.outerWidth<="470"){
+  if(window.outerWidth<="600"){
     navLink.classList.add('hidden')
     resNav.classList.add("hidden")
     navBar.classList.remove("hidden")
