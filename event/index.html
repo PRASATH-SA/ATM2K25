@@ -22,16 +22,50 @@
     z-index: -10;
     }
     </style>
+  
+
+<script>
+  let navLink = document.getElementById("navlinks");
+  let resNav = document.getElementById("res_nav");
+  let navBar = document.getElementById("MenuBar");
+  if(window.outerWidth<="470"){
+    navLink.classList.add('hidden')
+    resNav.classList.add("hidden")
+    navBar.classList.remove("hidden")
+
+    navBar.addEventListener('click',() =>{
+      navLink.classList.toggle('hidden');
+    });
+  }
+  else{
+    navLink.classList.add('hidden')
+    resNav.classList.remove("hidden")
+    navBar.classList.add("hidden")
+  }
+</script>
   <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
-        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-          <a href="index.html"><img src="/res/atmLogo.png" alt="ATM'25" width="200px"></a>
-          <ul class="flex space-x-6 text-lg">
-                <li><a href="../" class="neon-link">Home</a></li>
-                <li><a href="../departments" class="neon-link">Events</a></li>
-            </ul>
-        </div>
-    </nav>
-    
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <a href="../"><img src="../res/atmLogo.png" alt="ATM'25" width="200px"></a>
+      <ul id="res_nav" class="flex space-x-6 text-lg hidden">
+        <li><a href="../" class="neon-link">Home</a></li>
+        <li><a href="../organizing_committee/" class="neon-link">Organizing Committee</a></li>
+        <li><a href="../departments/" class="neon-link">Events</a></li>
+        <li><a href="../contact/" class="neon-link">Contact Us</a></li>
+        <li><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+      </ul>
+  <svg id="MenuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+
+    </div>
+  </nav> 
+    <ul id="navlinks" style="transition: 2s !important; transform: translateY(25%);" class="sticky p-2 backdrop-blur-xl text-lg border-b border-cyan-400/40">
+        <li class="p-5"><a href="../" class="neon-link">Home</a></li>
+        <li class="p-5"><a href="../organizing_committee/" class="neon-link">Organizing Committee</a></li>
+        <li class="p-5"><a href="../departments/" class="neon-link">Events</a></li>
+        <li class="p-5"><a href="../contact/" class="neon-link">Contact Us</a></li>
+        <li class="p-5"><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+      </ul>
  <div class="parallax absolute inset-0 -z-10">
     <video src="/res/part.mp4" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"style="object-fit: cover;"></video>
   </div> 
@@ -104,6 +138,24 @@
       }
 </style>
 <script src="../script.js"></script>
+<script>
+  let navLink = document.getElementById("navlinks");
+  let resNav = document.getElementById("res_nav");
+  let navBar = document.getElementById("MenuBar");
+  if(window.outerWidth<="470"){
+    navLink.classList.add('hidden')
+    resNav.classList.add("hidden")
+    navBar.classList.remove("hidden")
 
+    navBar.addEventListener('click',() =>{
+      navLink.classList.toggle('hidden');
+    });
+  }
+  else{
+    navLink.classList.add('hidden')
+    resNav.classList.remove("hidden")
+    navBar.classList.add("hidden")
+  }
+</script>
 </body>
 </html>

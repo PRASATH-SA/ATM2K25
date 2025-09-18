@@ -94,8 +94,6 @@
     @keyframes fadeOut {
       to { opacity: 0; visibility: hidden; }
     }
-
-   
     </style>
     <!-- Splash Screen -->
 <div id="splash-screen" class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-purple-950 via-black to-gray-900 z-[9999]">
@@ -109,21 +107,34 @@
     <video src="res/rotate_bg.webm" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
   </div> 
   
+
+
+
   <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
         <a href="index.html"><img src="res/atmLogo.png" alt="ATM'25" width="200px"></a>
-      <ul class="flex space-x-6 text-lg">
+      <ul id="res_nav" class="flex space-x-6 text-lg hidden">
         <li><a href="" class="neon-link">Home</a></li>
         <li><a href="organizing_committee/" class="neon-link">Organizing Committee</a></li>
         <li><a href="departments/" class="neon-link">Events</a></li>
         <li><a href="contact/" class="neon-link">Contact Us</a></li>
         <li><a href="" class="neon-link">Register Now</a></li>
       </ul>
-    </div>
-  </nav>
+  <svg id="MenuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
 
+    </div>
+  </nav> 
+    <ul id="navlinks" style="transition: 2s !important; transform: translateY(25%);" class="sticky p-2 backdrop-blur-xl text-lg border-b border-cyan-400/40">
+        <li class="p-5"><a href="" class="neon-link">Home</a></li>
+        <li class="p-5"><a href="organizing_committee/" class="neon-link">Organizing Committee</a></li>
+        <li class="p-5"><a href="departments/" class="neon-link">Events</a></li>
+        <li class="p-5"><a href="contact/" class="neon-link">Contact Us</a></li>
+        <li class="p-5"><a href="" class="neon-link">Register Now</a></li>
+      </ul>
   <header class="h-screen flex flex-col justify-center items-center text-center px-6 relative">
-    <h2 class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">ACHARIYA TECH MEET 2K25 </h2>
+    <h2 id="ATM_text" class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">ACHARIYA TECH MEET 2K25 </h2>
     <p class="mt-6 text-lg max-w-2xl text-gray-200">Welcome to our annual inter-department symposium. <br>Join us for exciting events and competitions!</p>
     <a href="departments/" style="display: inline-flex;" class="mt-10 px-8 py-3 bg-white/20 border-b border-cyan-400/40 rounded rounded-2xl neon-button hover:backdrop-blur-xl">
       <svg xmlns="http://www.w3.org/2000/svg" title="Explore Events" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -203,7 +214,7 @@ By bringing together students, academicians, and professionals from across the c
     if (scrollPosition >= totalScroll) {
       // Reset scroll for infinite loop
       scrollPosition = 0;
-      carousel.scrollTo({ left: 0, behavior: 'auto' });
+      carousel.scrollTo({ left: 0, behavior: 'smooth' });
     } else {
       carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
     }
@@ -215,8 +226,28 @@ By bringing together students, academicians, and professionals from across the c
   // Optional: pause scroll on hover
   carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
   carousel.addEventListener('mouseleave', () => setInterval(autoScroll, 3000));
-
   
+  let ATM_text=document.getElementById("ATM_text");
+  let navLink = document.getElementById("navlinks");
+  let resNav = document.getElementById("res_nav");
+  let navBar = document.getElementById("MenuBar");
+  if(window.outerWidth<="470"){
+    navLink.classList.add('hidden')
+    resNav.classList.add("hidden")
+    navBar.classList.remove("hidden")
+    ATM_text.classList.add('text-4xl')
+    ATM_text.classList.remove('text-6xl')
+
+    navBar.addEventListener('click',() =>{
+      navLink.classList.toggle('hidden');
+    });
+  }
+  else{
+    navLink.classList.add('hidden')
+    resNav.classList.remove("hidden")
+    navBar.classList.add("hidden")
+  }
+
 </script>
 <!-- Custom Cursor -->
 <div id="cursor"></div>
