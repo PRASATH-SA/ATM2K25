@@ -62,7 +62,7 @@
   </footer>
   <script>
     async function loadDepartments() {
-      const res = await fetch("/events.json");
+      const res = await fetch("../events.json");
       const data = await res.json();
       const container = document.getElementById("departments");
 

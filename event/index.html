@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 
-<body class="min-h-screen bg-gradient-to-br from-purple-950 via-black to-gray-900 text-white flex items-center justify-center px-6">
+<body class="text-white">
   <style>
       .parallax {
     background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your background image */
@@ -22,7 +22,7 @@
     z-index: -10;
     }
     </style>
-  
+   
 
   <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
@@ -34,27 +34,31 @@
         <li><a href="../contact/" class="neon-link">Contact Us</a></li>
         <li><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
       </ul>
-  <svg id="MenuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-  </svg>
+      <a href="../" style="margin: 0;"><img src="../res/achariya25.jpg" alt="achariya" width="80px"></a>
+      <svg id="MenuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      <svg id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
 
     </div>
   </nav> 
-    <ul id="navlinks" style="transition: 2s !important; transform: translateY(25%);" class="sticky p-2 backdrop-blur-xl text-lg border-b border-cyan-400/40">
-        <li class="p-5"><a href="../" class="neon-link">Home</a></li>
-        <li class="p-5"><a href="../organizing_committee/" class="neon-link">Organizing Committee</a></li>
-        <li class="p-5"><a href="../departments/" class="neon-link">Events</a></li>
-        <li class="p-5"><a href="../contact/" class="neon-link">Contact Us</a></li>
-        <li class="p-5"><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
-      </ul>
- <div class="parallax absolute inset-0 -z-10">
+  <ul id="navlinks" style="transition: 2s !important; transform: translateY(25%);" class="fixed p-2 backdrop-blur-xl w-full text-lg border-b border-cyan-400/40 z-10">
+      <li class="p-5"><a href="../" class="neon-link">Home</a></li>
+      <li class="p-5"><a href="../organizing_committee/" class="neon-link">Organizing Committee</a></li>
+      <li class="p-5"><a href="../departments/" class="neon-link">Events</a></li>
+      <li class="p-5"><a href="../contact/" class="neon-link">Contact Us</a></li>
+      <li class="p-5"><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+  </ul>
+ <div class="parallax absolute inset-0 z-10">
     <video src="/res/part.mp4" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"style="object-fit: cover;"></video>
-  </div> 
-
-    <div id="event-detail" class="glass-card neon-border max-w-2xl w-full p-8 rounded-2xl shadow-lg">
+ </div>
+<div class="min-h-screen bg-gradient-to-br from-purple-950 via-black to-gray-900 text-white flex items-center justify-center px-6">
+  <div id="event-detail" class="glass-card neon-border max-w-2xl w-full p-8 rounded-2xl shadow-lg">
     <!-- Event details load here -->
   </div>
-
+</div>
   <script>
     async function loadEvent() {
       const params = new URLSearchParams(window.location.search);
@@ -123,13 +127,21 @@
   let navLink = document.getElementById("navlinks");
   let resNav = document.getElementById("res_nav");
   let navBar = document.getElementById("MenuBar");
-  if(window.outerWidth<="600"){
+  let close = document.getElementById("close");
+  if(window.outerWidth<="800"){
     navLink.classList.add('hidden')
     resNav.classList.add("hidden")
     navBar.classList.remove("hidden")
-
+    close.classList.add('hidden')
     navBar.addEventListener('click',() =>{
       navLink.classList.toggle('hidden');
+      close.classList.remove('hidden');
+      navBar.classList.add('hidden');
+      close.addEventListener('click',()=>{
+        navBar.classList.remove('hidden')
+        close.classList.add('hidden')
+        navLink.classList.add('hidden');
+      })
     });
   }
   else{
