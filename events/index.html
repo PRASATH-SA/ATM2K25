@@ -67,7 +67,7 @@
       const params = new URLSearchParams(window.location.search);
       const deptId = params.get("dept");
 
-      const res = await fetch("/events.json");
+      const res = await fetch("../events.json");
       const data = await res.json();
       const dept = data.find(d => d.deptId === deptId);
 
