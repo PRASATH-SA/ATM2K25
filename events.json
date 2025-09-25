@@ -321,5 +321,89 @@
       }
          
     ]
+  },
+  {
+    "deptId": "sh",
+    "name": "Science & Humanities",
+    "events": [
+       {
+        "id": 1,
+        "title": "Free fire",
+        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "timing": "10:30 AM - 12:30 PM",
+        "rules": [
+          "Individual participation",
+          "No external devices allowed",
+          "Internet access restricted"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "BGMI",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 3,
+        "title": "Mobile Photography",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 4,
+        "title": "Face Painting",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 5,
+        "title": "Connection",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 6,
+        "title": "Free Style Dancing",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 7,
+        "title": "Singing",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      }
+         
+    ]
   }
 ]
