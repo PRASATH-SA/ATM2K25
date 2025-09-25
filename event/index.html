@@ -65,7 +65,7 @@
       const deptId = params.get("dept");
       const id = parseInt(params.get("id"));
 
-      const res = await fetch("/events.json");
+      const res = await fetch("../events.json");
       const data = await res.json();
       const dept = data.find(d => d.deptId === deptId);
       if (!dept) return document.getElementById("event-detail").innerHTML = "<p>Department not found!</p>";
