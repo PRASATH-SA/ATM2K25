@@ -166,7 +166,7 @@
       },
       {
         "id": 2,
-        "title": "QuiztroniX",
+        "title": "Infographix",
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
@@ -177,7 +177,7 @@
       },
       {
         "id": 3,
-        "title": "Circuitrix",
+        "title": "QuiztroniX",
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
@@ -188,6 +188,17 @@
       },
       {
         "id": 4,
+        "title": "Circuitrix",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 5,
         "title": "clashX",
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
