@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event - ATM2K25</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="text-white">
+  <style>
+      .parallax {
+    background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This creates the parallax effect */
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4); /* Optional: darken the background for better text contrast */
+    z-index: -10;
+    }
+    </style>
+   
+
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <a href="../"><img src="../res/atmLogo.png" alt="ATM'25" width="200px"></a>
+      <ul id="res_nav" class="flex space-x-6 text-lg hidden">
+        <li><a href="../" class="neon-link">Home</a></li>
+        <li><a href="../organizing_committee/" class="neon-link">Organizing Committee</a></li>
+        <li><a href="../departments/" class="neon-link">Events</a></li>
+        <li><a href="../contact/" class="neon-link">Contact Us</a></li>
+        <li><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+      </ul>
+      <a href="../" style="margin: 0;"><img src="../res/achariya25.jpg" alt="achariya" width="80px"></a>
+      <svg id="MenuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      <svg id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+
+    </div>
+  </nav> 
+  <ul id="navlinks" style="transition: 2s !important; transform: translateY(25%);" class="fixed p-2 backdrop-blur-xl w-full text-lg border-b border-cyan-400/40 z-10">
+      <li class="p-5"><a href="../" class="neon-link">Home</a></li>
+      <li class="p-5"><a href="../organizing_committee/" class="neon-link">Organizing Committee</a></li>
+      <li class="p-5"><a href="../departments/" class="neon-link">Events</a></li>
+      <li class="p-5"><a href="../contact/" class="neon-link">Contact Us</a></li>
+      <li class="p-5"><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+  </ul>
+ <div class="parallax absolute inset-0 z-10">
+    <video src="/res/part.mp4" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"style="object-fit: cover;"></video>
+ </div>
+<div class="min-h-screen bg-gradient-to-br from-purple-950 via-black to-gray-900 text-white flex items-center justify-center px-6">
+  <div id="event-detail" class="glass-card neon-border max-w-2xl w-full p-8 rounded-2xl shadow-lg">
+    <!-- Event details load here -->
+  </div>
+</div>
+  <script>
+    async function loadEvent() {
+      const params = new URLSearchParams(window.location.search);
+      const deptId = params.get("dept");
+      const id = parseInt(params.get("id"));
+
+      const res = await fetch("../events.json");
+      const data = await res.json();
+      const dept = data.find(d => d.deptId === deptId);
+      if (!dept) return document.getElementById("event-detail").innerHTML = "<p>Department not found!</p>";
+      
+      const event = dept.events.find(e => e.id === id);
+      if (!event) return document.getElementById("event-detail").innerHTML = "<p>Event not found!</p>";
+
+      document.getElementById("event-detail").innerHTML = `
+        <h1 class="text-3xl font-extrabold mb-4 text-neon">${event.title}</h1>
+        <p class="mb-4 text-gray-300">${event.description}</p>
+        <p class="mb-4"><strong>Timing:</strong> ${event.timing}</p>
+        <div>
+          <h2 class="text-xl font-bold mb-2">Rules & Regulations</h2>
+          <ul class="list-disc list-inside text-gray-300">
+            ${event.rules.map(rule => `<li>${rule}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+    loadEvent();
+  </script>
+  
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Custom cursor base */
+      #cursor {
+        width: 20px;
+        height: 20px;
+        border: 2px solid cyan;
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: transform 0.15s ease-out, width 0.2s, height 0.2s;
+        z-index: 9999;
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+        background: rgba(0, 255, 255, 0.08);
+        backdrop-filter: blur(6px);
+      }
+
+      /* Cursor grows on hover */
+      #cursor.cursor-hover {
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 255, 255, 0.15);
+        box-shadow: 0 0 15px #0ff, 0 0 25px #0ff, 0 0 40px #0ff;
+      }
+</style>
+<script src="../script.js"></script>
+<script>
+  let navLink = document.getElementById("navlinks");
+  let resNav = document.getElementById("res_nav");
+  let navBar = document.getElementById("MenuBar");
+  let close = document.getElementById("close");
+  if(window.outerWidth<="800"){
+    navLink.classList.add('hidden')
+    resNav.classList.add("hidden")
+    navBar.classList.remove("hidden")
+    close.classList.add('hidden')
+    navBar.addEventListener('click',() =>{
+      navLink.classList.toggle('hidden');
+      close.classList.remove('hidden');
+      navBar.classList.add('hidden');
+      close.addEventListener('click',()=>{
+        navBar.classList.remove('hidden')
+        close.classList.add('hidden')
+        navLink.classList.add('hidden');
+      })
+    });
+  }
+  else{
+    navLink.classList.add('hidden')
+    resNav.classList.remove("hidden")
+    navBar.classList.add("hidden")
+  }
+</script>
+</body>
+</html>

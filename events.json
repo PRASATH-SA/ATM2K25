@@ -1,0 +1,447 @@
+[
+  {
+    "deptId": "AIDS",
+    "name": "Artificial Intelligence & Data Science",
+    "events": [
+      {
+        "id": 1,
+        "title": "AI PROMPT BATTLE",
+        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "timing": "10:30 AM - 12:30 PM",
+        "rules": [
+          "Participation can be solo or in teams of 2",
+          "Basically participants compete to create the best prompts and see what AI generates",
+          "Rounds: Multiple rounds. Rules will be explained before each round.",
+          "Only AI tools allowed by organizers may be used (ChatGPT, DALL·E,GEMINI, etc.).",
+          "No pre-written prompts or external references allowed.",
+          "English prompts only (unless specified in theme).",
+          "Time limits are strict for each round.",
+          "Plagiarism or rule violation = disqualification."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "FRONTEND FLUX",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Participation can be solo or in teams of 2.",
+          "Only HTML, CSS, and basic JavaScript are allowed (no frameworks like Bootstrap).",
+          "No preview of code is allowed during the challenge.",
+          "Time limits must be strictly followed.",
+          "Design reference will be shown only once before the round starts.",
+          "Use of external assets or internet resources is prohibited (except provided images/logos)."
+
+        ]
+      },
+      {
+        "id": 3,
+        "title": "CINETECH",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team Size: 1–3 members per team.",
+          "Rounds: Multiple rounds will be conducted. Rules will be explained before each round.",
+          "Time Limit: Each question must be answered within the given time (15–30 seconds).",
+          "Scoring: Points are awarded for correct answers. No negative marking unless announced.",
+          "Tie-breaker: In case of a tie, extra questions will decide the winner.",
+          "Fair Play: No use of phones or external help. Any malpractice = direct disqualification.",
+          "Decisions: Judges’/coordinators’ decisions are final.",
+          "Updates: Organizers may modify rules/format if needed."
+
+        ]
+      },
+      {
+        "id": 4,
+        "title": "IDEA SHOWCASE",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Participation: Solo or team of 2",
+          "DOMAIN: Artificial Intelligence",
+          "Abstracts must focus on one key idea.",
+          "Slides allowed if needed but limited to 3–5 with minimal text, visuals encouraged.",
+          "Time limit is strictly enforced (3–5 minutes).",
+          "Offensive, discriminatory, or promotional content is prohibited.",
+          "Plagiarism will lead to disqualification.",
+          "Participants must report 10 minutes before their session."
+
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "civil",
+    "name": "Civil Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "Paper Presentation",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "CADD modelling",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Code Cracking",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "cse",
+    "name": "Computer Science & Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "Project Presentation",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Hunt the Bug",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Creative Collision",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Quiz Bit",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Code Craft",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "ece",
+    "name": "Electronics & Communication Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "IdeaXplore",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Infographix",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "QuiztroniX",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Circuitrix",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "clashX",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "eee",
+    "name": "Electrical & Electronics Engineering",
+    "events": [
+      {
+        "id": 1,
+        "title": "TECHWHIZ",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "INFINITO'25",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "BUGZAP",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "CRE-O-EXPO",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "CONNECTRIX",
+        "description": "Design and troubleshoot circuits under time pressure.",
+        "timing": "11:00 AM - 1:00 PM",
+        "rules": [
+          "Team of 2",
+          "No simulation software allowed",
+          "Components will be provided"
+        ]
+      }
+    ]
+  },
+  {
+    "deptId": "mech",
+    "name": "Mechanical Engineering",
+    "events": [
+       {
+        "id": 1,
+        "title": "Paper presentation",
+        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "timing": "10:30 AM - 12:30 PM",
+        "rules": [
+          "Individual participation",
+          "No external devices allowed",
+          "Internet access restricted"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Cad war",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 3,
+        "title": "Mr. Machinist",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 4,
+        "title": "Water rocketry",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 5,
+        "title": "Tech Quiz",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      }
+         
+    ]
+  },
+  {
+    "deptId": "sh",
+    "name": "Science & Humanities",
+    "events": [
+       {
+        "id": 1,
+        "title": "Free fire",
+        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "timing": "10:30 AM - 12:30 PM",
+        "rules": [
+          "Individual participation",
+          "No external devices allowed",
+          "Internet access restricted"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "BGMI",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 3,
+        "title": "Mobile Photography",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Participation: Solo ",
+          "Participants will be allowed certain time limit to take photos and submit it within the time limit",
+          "Participants will be allowed to photos only within the college campus",
+          "Photos can be taken in any mobile(android/iOS)",
+          "Photos taken should be raw image, usage of filters or external app will lead to disqualification",
+          "Offensive, discriminatory, or promotional content is prohibited.",
+          "Plagiarism will lead to disqualification.",
+          "Participants must report 10 minutes before their session"
+        ],
+        "co-ordinators":"Mrs. S. Jeevidha ( AP/AI&DS)"
+      },
+       {
+        "id": 4,
+        "title": "Face Painting",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 5,
+        "title": "Connection",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 6,
+        "title": "Free Style Dancing",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      },
+       {
+        "id": 7,
+        "title": "Singing",
+        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "timing": "1:30 PM - 3:00 PM",
+        "rules": [
+          "Team of 2 members",
+          "Each team must solve minimum 3 problems",
+          "Winner is based on accuracy & speed"
+        ]
+      }
+         
+    ]
+  }
+]

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achariya Tech Meet 25</title>
+  <link rel="shortcut icon" href="res/achariya25.jpg" type="image/x-icon">
+  <!-- JQuery & Tailwind CSS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <meta name="google-site-verification" content="ihABI4ddWtMjowGMQHWwomxidrEhnATpUEkYdyUDKQg" />
+  <meta name="description" content="Achariya Tech Meet - 2k25, A National level Technical Symposium by Achariya College of Engineering Technology. Website Sponsored by Favoflex.">
+  <meta name="og:image" content="https://atm25.favoflex.com/res/atmLogo.png" />
+  <meta name="theme-color" content="#000022" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000022">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000022">
+  
+</head>
+<body class="bg-[#0f0c29] text-white font-sans atm_cursor">
+  <script>
+    // jQuery for Dropdown Toggle
+    $(document).ready(function () {
+      $('#dropdownButton').on('click', function (e) {
+        e.preventDefault();
+        $('#dropdownMenu').toggleClass('hidden');
+      });
+
+      // Close dropdown when clicking outside
+      $(document).on('click', function (e) {
+        if (!$(e.target).closest('#dropdownButton, #dropdownMenu').length) {
+          $('#dropdownMenu').addClass('hidden');
+        }
+      });
+    });
+  </script>
+   <style>
+        /* Parallax background */
+    .parallax {
+    background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1555&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This creates the parallax effect */
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4); /* Optional: darken the background for better text contrast */
+    z-index: -10;
+    }
+    body{
+      scroll-behavior: smooth;
+    }
+    .text-neon {
+      color: #0ff;
+      /* -webkit-text-stroke: .3px rgb(41, 39, 39); */
+      text-shadow: 0 0 5px #0ff, 0 0 5px #0ff, 0 0 5px #0ff;
+    }
+   
+    body{
+      cursor: url('https://atm25.netlify.app/res/atmLogoo.jpg'),auto;
+    }
+    /* Splash screen fade-out */
+    #splash-screen {
+      animation: fadeOut 1s ease forwards;
+      animation-delay: 3s; /* stays visible for 3s */
+    }
+
+    /* Logo entrance effect */
+    #splash-screen .logo {
+      opacity: 0;
+      transform: scale(0.5);
+      animation: logoPop 1.2s ease forwards;
+    }
+
+    #splash-screen h1 {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: textFade 1.2s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    /* Animations */
+    @keyframes logoPop {
+      0% { opacity: 0; transform: scale(0.5) rotate(-15deg); }
+      60% { opacity: 1; transform: scale(1.1) rotate(5deg); }
+      100% { opacity: 1; transform: scale(1) rotate(0); }
+    }
+
+    @keyframes textFade {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+    </style>
+    <!-- Splash Screen -->
+<div id="splash-screen" class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-purple-950 via-black to-gray-900 z-[9999]">
+  <div class="logo-container text-center">
+    <img src="res/atmLogo.png" alt="ATM2K25 Logo" class="logo w-48 mx-auto">
+    <h1 class="mt-4 text-3xl font-extrabold ">Achariya Tech Meet 2k25</h1>
+  </div>
+</div>
+
+  <div class="parallax absolute inset-0 -z-10">
+    <video src="res/rotate_bg.webm" autoplay loop muted style="max-width: none; width: 100%;height: 100vh; object-fit: cover;"></video>
+  </div> 
+  
+
+
+
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-cyan-400/40">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <a href="../"><img src="/res/atmLogo.png" alt="ATM'25" width="200px"></a>
+      <ul id="res_nav" class="flex space-x-6 text-lg hidden">
+        <li><a href="/" class="neon-link">Home</a></li>
+        <li><a href="organizing_committee/" class="neon-link">Organizing Committee</a></li>
+        <li><a href="departments/" class="neon-link">Events</a></li>
+        <li><a href="contact/" class="neon-link">Contact Us</a></li>
+        <li><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+      </ul>
+      <a href="../" style="margin: 0;"><img src="/res/achariya25.jpg" alt="achariya" width="80px"></a>
+      <svg id="MenuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      <svg id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+
+    </div>
+  </nav> 
+  <ul id="navlinks" style="transition: 2s !important; transform: translateY(25%);" class="fixed p-2 backdrop-blur-xl w-full text-lg border-b border-cyan-400/40 z-10">
+      <li class="p-5"><a href="/" class="neon-link">Home</a></li>
+      <li class="p-5"><a href="organizing_committee/" class="neon-link">Organizing Committee</a></li>
+      <li class="p-5"><a href="departments/" class="neon-link">Events</a></li>
+      <li class="p-5"><a href="contact/" class="neon-link">Contact Us</a></li>
+      <li class="p-5"><a href="https://forms.gle/wwuYcAfJbqBhjMtH7" class="neon-link">Register Now</a></li>
+  </ul>
+
+  <header class="h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <h2 id="ATM_text" class="text-6xl font-extrabold text-cyan-300 drop-shadow-neon">ACHARIYA TECH MEET 2K25 </h2>
+    <p class="mt-6 text-lg max-w-2xl text-gray-200">Welcome to our annual inter-department symposium. <br>Join us for exciting events and competitions!</p>
+    <a href="departments/" style="display: inline-flex;" class="mt-10 px-8 py-3 bg-white/20 border-b border-cyan-400/40 rounded rounded-2xl neon-button hover:backdrop-blur-xl">
+      <svg xmlns="http://www.w3.org/2000/svg" title="Explore Events" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+      </svg> &nbsp;Explore Events</a>
+  </header>
+
+
+  <section class="py-16 bg-white/5 backdrop-blur-xl relative z-10 p-4">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 ">
+      <div class="glass-card neon-border" style="text-align: justify;">
+        <h2 class="text-4xl font-bold text-center text-cyan-300 mb-8 drop-shadow-neon">ABOUT ATM'25</h2>
+        <p><b>Achariya College of Engineering Technology</b>, Puducherry, is delighted to host <b>ATM 25</b>, a National Level Technical Symposium, on October 10, 2025. This annual technical fest is designed to encourage innovation, creativity, and collaboration among young engineers and technologists. It provides a unique platform for students to showcase their technical skills, share knowledge, and gain insights into emerging trends in engineering and technology.
+<br><br>
+ATM 25 will feature a vibrant mix of events including paper presentations, project expos, technical quizzes, hackathons, and expert talks by industry leaders. These sessions are carefully curated to enhance the problem-solving abilities, technical expertise, and research orientation of participants. In addition to the technical programs, the symposium also offers engaging cultural and fun events, ensuring a holistic and memorable experience for all attendees.
+<br><br>
+By bringing together students, academicians, and professionals from across the country, ATM 25 aims to foster an environment of learning, networking, and innovation. Participants will not only have the chance to compete and win recognition but also to build meaningful connections and expand their horizons. With its commitment to excellence, Achariya College of Engineering Technology looks forward to making ATM 25 a grand success and a celebration of engineering brilliance.
+</p>
+    </div>
+    <div class="glass-card neon-border" style="text-align: justify;">
+        <h2 class="text-4xl font-bold text-center text-cyan-300 mb-8 drop-shadow-neon">ABOUT ACET</h2>
+        <p>Achariya College of Engineering Technology, which was established in 2010, has spent over a decade dedicated to nurturing the academic and professional growth of its students and staff. Over the years, the institution has evolved into a hub of Innovation and Excellence, continually adapting to the ever-changing demands of the Engineering field. The college has built a strong reputation for its commitment to high-quality Education, state-of-the-art Facilities, and a supportive Learning Environment. With a focus on both theoretical Knowledge and practical Skills, it has successfully equipped its graduates with the tools needed to excel in their careers. The college’s success can be attributed to its dedicated Faculty, progressive Curriculum, and emphasis on Research and Development. As it moves forward, Achariya College of Engineering Technology remains steadfast in its mission to empower students and contribute to the advancement of Technology and Society.
+          <br><br>
+          <b>Achariya Group of Institutions</b>, celebrating its 25th glorious year of excellence in education, proudly presents Achariya Tech Meet – ATM 25, a National Level Technical Symposium, hosted by Achariya College of Engineering Technology, Puducherry, on <b>October 10, 2025</b>.</p>
+  </section>
+
+<section class="max-w-5xl mx-auto py-16 px-6">
+  <h3 class="text-4xl font-bold text-center text-cyan-300 mb-10 drop-shadow-neon text-neon">Departments</h3>
+
+  <div class="relative">
+    <!-- Carousel container -->
+    <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide space-x-6">
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <a href="events.html?dept=aids"><img src="res/aids.jpeg" alt="Image 3" class="w-full h-full object-cover rounded-2xl"></a>
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <a href="events.html?dept=civil"><img src="res/civil.jpeg" alt="Image 3" class="w-full h-full object-cover rounded-2xl"></a>
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <a href="events.html?dept=cse"><img src="res/acetcm_logo.jpg" alt="Image 1" class="w-full h-full object-cover rounded-2xl"></a>
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <a href="events.html?dept=ece"><img src="res/acetronix_logo.png" alt="Image 2" class="w-full h-full object-cover rounded-2xl"></a>
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <a href="events.html?dept=eee"><img src="res/ignitron.png" alt="Image 3" class="w-full h-full object-cover rounded-2xl"></a>
+      </div>
+      
+      
+      <!-- Duplicate slides for seamless loop -->
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/acetcm_logo.jpg" alt="Image 1" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/acetronix_logo.png" alt="Image 2" class="w-full h-full object-cover rounded-2xl">
+      </div>
+      <div class="flex-shrink-0 w-80 h-60 rounded-2xl glass-card neon-border snap-center relative">
+        <img src="res/ignitron.png" alt="Image 3" class="w-full h-full object-cover rounded-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="text-center py-6 text-gray-400 bg-black/60 relative z-10">
+    © 2025 Achariya College of Engineering Technology. All Rights Reserved.
+  </footer>
+  <script>
+  const parallax = document.querySelector('.parallax');
+
+  window.addEventListener('scroll', () => {
+    let offset = window.pageYOffset;
+    parallax.style.transform = `translateY(${offset * 0.5}px)`; // 0.5 = speed factor
+  });
+</script>
+
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const cardWidth = 350; // width + gap approx
+
+  let scrollPosition = 0;
+  const totalScroll = carousel.scrollWidth / 2; // Because we duplicated slides for looping
+
+  function autoScroll() {
+    scrollPosition += cardWidth;
+    if (scrollPosition >= totalScroll) {
+      // Reset scroll for infinite loop
+      scrollPosition = 0;
+      carousel.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    }
+  }
+
+  // Auto-scroll every 3 seconds
+  const scrollInterval = setInterval(autoScroll, 3000);
+
+  // Optional: pause scroll on hover
+  carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+  carousel.addEventListener('mouseleave', () => setInterval(autoScroll, 3000));
+  
+  let ATM_text=document.getElementById("ATM_text");
+  let navLink = document.getElementById("navlinks");
+  let resNav = document.getElementById("res_nav");
+  let navBar = document.getElementById("MenuBar");
+  if(window.outerWidth<="470"){
+    navLink.classList.add('hidden')
+    resNav.classList.add("hidden")
+    navBar.classList.remove("hidden")
+    ATM_text.classList.add('text-4xl')
+    ATM_text.classList.remove('text-6xl')
+
+    navBar.addEventListener('click',() =>{
+      navLink.classList.toggle('hidden');
+    });
+  }
+  else{
+    navLink.classList.add('hidden')
+    resNav.classList.remove("hidden")
+    navBar.classList.add("hidden")
+  }
+
+</script>
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+
+
+
+<style>
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Custom cursor base */
+#cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid cyan;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, width 0.2s, height 0.2s;
+  z-index: 9999;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  background: rgba(0, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+/* Cursor grows on hover */
+#cursor.cursor-hover {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 15px #0ff, 0 0 25px #0ff, 0 0 40px #0ff;
+}
+</style>
+
+<script>
+  window.addEventListener("load", () => {
+    const splash = document.getElementById("splash-screen");
+    setTimeout(() => {
+      splash.style.display = "none";
+    }, 4000); // total time (3s show + 1s fade)
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
