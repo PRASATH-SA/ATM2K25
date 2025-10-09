@@ -79,18 +79,26 @@
         <p class="mb-4"><strong>Timing:</strong> ${event.timing}</p>
         <div>
           <h2 class="text-xl font-bold mb-2">Rules & Regulations</h2>
-          <ul class="list-disc list-inside text-gray-300">
+          <ul class="list-disc list-inside mb-6 text-gray-300">
             ${event.rules.map(rule => `<li>${rule}</li>`).join("")}
           </ul>
         </div>
+        <center>
+        <a href="https://forms.gle/wwuYcAfJbqBhjMtH7" id="reg" class="px-8 py-3 bg-white/20 border-b border-cyan-400/40 rounded rounded-2xl neon-button hover:backdrop-blur-xl"> 
+          Register Now!.
+        </a>
+        </center>
       `;
     }
     loadEvent();
   </script>
-  
+
 <!-- Custom Cursor -->
 <div id="cursor"></div>
 <style>
+  #reg{
+    margin-top: 40px !important;
+  }
       .scrollbar-hide::-webkit-scrollbar {
         display: none;
       }
