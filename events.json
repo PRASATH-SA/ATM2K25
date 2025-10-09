@@ -6,7 +6,7 @@
       {
         "id": 1,
         "title": "AI PROMPT BATTLE",
-        "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
+        "description": "Creating prompts and providing required result",
         "timing": "10:30 AM - 12:30 PM",
         "rules": [
           "Participation can be solo or in teams of 2",
@@ -22,8 +22,8 @@
       {
         "id": 2,
         "title": "FRONTEND FLUX",
-        "description": "Find and fix bugs in pre-written programs across different languages.",
-        "timing": "1:30 PM - 3:00 PM",
+        "description": "Front-end web development challenge where participants must replicaate a given webpage design using HTML, CSS, and JavaScript.",
+        "timing": "10:30 AM - 12:30 PM",
         "rules": [
           "Participation can be solo or in teams of 2.",
           "Only HTML, CSS, and basic JavaScript are allowed (no frameworks like Bootstrap).",
@@ -37,8 +37,8 @@
       {
         "id": 3,
         "title": "CINETECH",
-        "description": "Find and fix bugs in pre-written programs across different languages.",
-        "timing": "1:30 PM - 3:00 PM",
+        "description": "Quiz based on cinema and science.",
+        "timing": "10:30 AM - 12:30 PM",
         "rules": [
           "Team Size: 1–3 members per team.",
           "Rounds: Multiple rounds will be conducted. Rules will be explained before each round.",
@@ -54,8 +54,8 @@
       {
         "id": 4,
         "title": "IDEA SHOWCASE",
-        "description": "Find and fix bugs in pre-written programs across different languages.",
-        "timing": "1:30 PM - 3:00 PM",
+        "description": "Presentation of an idea or a project.",
+        "timing": "10:30 AM - 12:30 PM",
         "rules": [
           "Participation: Solo or team of 2",
           "DOMAIN: Artificial Intelligence",
@@ -127,45 +127,45 @@
       {
         "id": 2,
         "title": "Hunt the Bug",
-        "description": "Design and troubleshoot circuits under time pressure.",
-        "timing": "11:00 AM - 1:00 PM",
+        "description": "A code debugging challenge within limited time.",
+        "timing": "11:30 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Individual participation only",
+          "No internet access allowed",
+          "Open to students with programming knowledge (C,C++, JAVA, Python)"
         ]
       },
       {
         "id": 3,
         "title": "Creative Collision",
-        "description": "Design and troubleshoot circuits under time pressure.",
-        "timing": "11:00 AM - 1:00 PM",
+        "description": "Designing a creative and eye-catching poster to share a message clearly and effectively.",
+        "timing": "2:00 PM - 3:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Team of 2 members",
+          "No pre-designed templates allowed",
+          "Softwares and websites are allowed (Adobe photoshop, Adobe illustrate, Canva, Etc,."
         ]
       },
       {
         "id": 4,
         "title": "Quiz Bit",
-        "description": "Design and troubleshoot circuits under time pressure.",
-        "timing": "11:00 AM - 1:00 PM",
+        "description": "Technical quiz based on technology.",
+        "timing": "2:00 PM - 3:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Individual participation only",
+          "Time Limit: Each question must be answered within the given time (15–30 seconds)."
         ]
       },
       {
         "id": 5,
         "title": "Code Craft",
-        "description": "Design and troubleshoot circuits under time pressure.",
+        "description": "Designing website based on the required design.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Individual participation",
+          "Open to all with web designing knowledge.",
+          "HTML, CSS, JS. (frameworks like, Bootstrap, Tailwind CSS, SCSS  can be used if needed)",
+          "Pre-built templates or frameworks like React, Angular, etc, are not allowed."
         ]
       }
     ]
@@ -180,9 +180,9 @@
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Team size: Max 4 members",
+          "Only PPT format is allowed.",
+          "Judges’ decision is final."
         ]
       },
       {
@@ -191,9 +191,11 @@
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+         "Team size: max 4 members.",
+        "Poster size: A1 sheet only.",
+        "Display and explanation time: 5 minutes.",
+        "Evaluation based on clarity & creativity."
+                                                                                  
         ]
       },
       {
@@ -202,9 +204,9 @@
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Team size: 2 members.",
+          "Mobile phone necessary.",
+          "Tie-breaking rounds if necessary."
         ]
       },
       {
@@ -213,9 +215,11 @@
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Team size : max 4 members",
+          "Prelims: written circuit faults.",
+          "Finals: practical circuit debugging.",
+          "Use of mobiles/calculators not allowed.",
+          "Time limit strictly enforced."
         ]
       },
       {
@@ -224,9 +228,11 @@
         "description": "Design and troubleshoot circuits under time pressure.",
         "timing": "11:00 AM - 1:00 PM",
         "rules": [
-          "Team of 2",
-          "No simulation software allowed",
-          "Components will be provided"
+          "Team size: 3–5 members.",
+          "Bot weight limit: as per event specs (e.g., 15kg).",
+          "Bots must be self-powered (no external supply).",
+          "No fire, liquid, or projectile weapons allowed.",
+          "Match rules & arena safety guidelines must be followed."
         ]
       }
     ]
@@ -298,7 +304,7 @@
     "events": [
        {
         "id": 1,
-        "title": "Paper presentation",
+        "title": "Paper mania",
         "description": "A fast-paced coding competition testing problem-solving and algorithmic skills.",
         "timing": "10:30 AM - 12:30 PM",
         "rules": [
@@ -372,12 +378,13 @@
       {
         "id": 2,
         "title": "BGMI",
-        "description": "Find and fix bugs in pre-written programs across different languages.",
+        "description": "Get ready to drop, loot, and dominate in the BGMI.",
         "timing": "1:30 PM - 3:00 PM",
         "rules": [
-          "Team of 2 members",
-          "Each team must solve minimum 3 problems",
-          "Winner is based on accuracy & speed"
+          "Team size: Duo/Squad",
+          "TDM warehouse or Erangel classic (no event) depends on strength ",
+          "TDM rules M416 or M24",
+          "Only mobile phone no tablet"
         ]
       },
        {
